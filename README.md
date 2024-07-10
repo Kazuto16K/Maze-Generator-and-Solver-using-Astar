@@ -3,7 +3,7 @@
 I have used **Recursive backtracking** to generate the Maze.
 Recursive backtracking is a depth-first search algorithm used for solving constraint satisfaction problems, such as maze generation, pathfinding, and puzzle solving. The general approach involves exploring possible solutions recursively and backtracking when a dead end is reached.
 
-## I have attacked the images explaining the algorithm
+## I have attached the images explaining the algorithm
 
 ![Maze_gen1](https://github.com/Kazuto16K/Maze-Generator-and-Solver-using-Astar/assets/112095521/167a8f9b-d323-41e5-abbb-2cc20156af67)
 
