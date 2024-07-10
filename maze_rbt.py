@@ -99,10 +99,9 @@ class Maze:
                     neighbours.append(3)
 
             if len(neighbours) != 0:
-                # Choose a cell at random
                 nextCell_dir = neighbours[random.randint(0, len(neighbours) - 1)]
 
-                # Create path between them
+                # Creating path between cells
                 if nextCell_dir == 0:  # North
                     self.maze[offset(0, 0)] |= CELL_PATH_N
                     self.maze[offset(0, -1)] |= CELL_PATH_S | CELL_VISITED
@@ -161,7 +160,6 @@ class Maze:
             if k[1] == self.mazeW-1:
                 v['E'] = 0
         
-        #print(self.searchGrid)
         self.fwdPath = self.astar((0,0),(self.mazeW-1,self.mazeH-1))
 
         index = (0,0)
@@ -179,11 +177,6 @@ class Maze:
                         break
                     pygame.display.flip()
                     pygame.time.wait(50)
-
-
-
-        
-        
 
     def draw_maze(self):
         # Draw the maze
@@ -205,7 +198,7 @@ class Maze:
                 if self.maze[y * self.mazeW + x] & CELL_PATH_S:
                     pygame.draw.rect(screen, WHITE, ((self.pathWidth + 1) * x, (self.pathWidth + 1) * y + self.pathWidth, self.pathWidth, 1))
 
-        # Update the display
+        # Updating display
 
         for py in range(self.pathWidth):
             for px in range(self.pathWidth):
@@ -215,8 +208,7 @@ class Maze:
 
         pygame.display.flip()
 
-        
-
+    
     """********************  A STAR IMPLEMENTATION    ************************"""
 
     def h(self,node,goal):
