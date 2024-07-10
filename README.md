@@ -16,5 +16,15 @@ Here , i have used Manhattan Distance as the heuristic function.
 
 ## Demonstration of Working 
 
+https://github.com/Kazuto16K/Maze-Generator-and-Solver-using-Astar/assets/112095521/ccdbe632-720b-4b52-a6ec-eefe863ee6e2
 
+## Steps to use:
+  - pip install pygame
+  - download the code
+  - Enter dimension of the Maze
+  - **Make sure python is installed**
+
+
+### Note
+I have used Pygame module of python for the visual demonstration. I implemented my own stack. (There was no need to do so , but since I already a previous implemented stack using LinkedList, so why not use it)
 
