@@ -1,5 +1,6 @@
-## I have made a Maze Generator and Solver
+# Maze Generator and Solver using Python
 
+## Maze Generation Algorithm:
 I have used **Recursive backtracking** to generate the Maze.
 Recursive backtracking is a depth-first search algorithm used for solving constraint satisfaction problems, such as maze generation, pathfinding, and puzzle solving. The general approach involves exploring possible solutions recursively and backtracking when a dead end is reached.
 
@@ -9,7 +10,7 @@ Recursive backtracking is a depth-first search algorithm used for solving constr
 
 ![Maze_gen2](https://github.com/Kazuto16K/Maze-Generator-and-Solver-using-Astar/assets/112095521/4afa2b36-4410-4f74-9cbf-43c869cb8521)
 
-## Path Search Algorithm
+## Path Search Algorithm:
 For Getting the path, I have used **A star search** algorithm
 The A* (A-star) search algorithm is a widely used pathfinding and graph traversal algorithm. It is particularly effective for finding the shortest path from a starting node to a goal node in a weighted graph. A* combines the advantages of Dijkstra's algorithm and Greedy Best-First-Search by using a heuristic to guide its search.
 Here , i have used Manhattan Distance as the heuristic function.
